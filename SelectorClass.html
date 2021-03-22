@@ -1,0 +1,59 @@
+<!-- Mendefinisikan tipe dokumen berupa html -->
+<html>
+	<head>
+		<!-- Memberikan judul pada tab browser -->
+		<title>Selector Class</title>
+		<!-- Menambahkan jQuery -->
+		<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+		<!-- Menanamkan script sisi klien (JavaScript) -->
+		<script type="text/javascript">
+			// Membuat fungsi tersedia setelah dokumen dimuat
+			$(document).ready(function(){
+				// Menambahkan nama kelas ke elemen yang dipilih
+				$("#daftar").addClass("merahkuning");
+				// Menambahkan nama kelas ke elemen yang dipilih
+				$(".subdaftar").addClass("kuninghitam");
+			});
+		</script>
+
+		<!-- Menambahkan css -->
+		<style type="text/css">
+			/* Membuat nama kelas */
+			.merahkuning{
+				/* Merubah warna teks menjadi merah */
+				color: red;
+				/* Merubah ketebalan teks menjadi bold */
+				font-weight: bold;
+				/* Merubah warna background teks menjadi kuning */
+				background-color: yellow;
+				/* Memberikan ruang di sekitar elemen */
+				padding: 3px;
+			}
+			/* Membuat nama kelas */
+			.kuninghitam{
+				/* Merubah warna teks menjadi biru */
+				color: blue;
+				/* Merubah warna background teks menjadi hijau */
+				background-color: green;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- Mengelompokkan elemen html -->
+		<div>
+			<!-- Membuat paragraf -->
+			<p>paragraf pertama</p>
+		</div>
+		<!-- Mengelompokkan elemen html -->
+		<div>
+			<!-- Membuat daftar item -->
+			<ul id="daftar">
+				<!-- Mendefinisikan setiap item daftar -->
+				<li>item 1</li>
+				<li class="subdaftar">item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</body>
+</html>

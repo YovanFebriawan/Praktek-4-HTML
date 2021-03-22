@@ -1,0 +1,63 @@
+<!-- Mendefinisikan tipe dokumen berupa html -->
+<html>
+	<head>
+		<!-- Memberikan judul pada tab browser -->
+		<title></title>
+		<!-- Menambahkan jQuery -->
+		<script src="jquery-3.6.0.min.js"></script>
+		<!-- Menanamkan script sisi klien (JavaScript) -->
+		<script type="text/javascript">
+			// Membuat fungsi tersedia setelah dokumen dimuat
+			$(document).ready(function(){
+				// Membuat fungsi untuk dijalankan saat peristiwa klik terjadi
+				$(".keluar").click(function(){
+					// Secara bertahap mengubah opasitas elemen dari yang terlihat menjadi tersembunyi
+					$(".kotak").fadeOut(0);
+				});
+				// Membuat fungsi untuk dijalankan saat peristiwa klik terjadi
+				$(".masuk").click(function(){
+					// Secara bertahap mengubah opasitas elemen dari yang tersembunyi menjadi terlihat
+					$(".kotak").fadeIn();
+				});
+				// Membuat fungsi untuk dijalankan saat peristiwa klik terjadi
+				$(".keluar3").click(function(){
+					// Secara bertahap mengubah opasitas elemen dari yang terlihat menjadi tersembunyi
+					$(".kotak").fadeOut(300);
+				});
+			});
+								
+		</script>
+		<!-- Menambahkan css -->
+		<style type="text/css">
+			/* Membuat nama kelas */
+			.kotak{
+				/* Menetapkan warna background */
+				background: yellow;
+				/* Menetapkan lebar elemen */
+				width: 250px;
+				/* Menetapkan tinggi elemen */
+				height: 200px;
+				/* Menetapkan ruang di sekitar elemen */
+				margin: 5px;
+			}
+			/* Membuat nama kelas */
+			.tes{
+				/* Menetapkan ruang di sekitar elemen */
+				margin: 5px;
+				/* Menetapkan ruang di atas dari suatu unsur */
+				padding-top: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Mengelompokkan elemen html -->
+		<div class="kotak"></div>
+		<!-- Mengelompokkan elemen html -->
+		<div class="tes">
+			<!-- Membuat tombol yang dapat ditekan -->
+			<button class="keluar">Fade Out</button>
+			<button class="masuk">Fade In</button>
+			<button class="keluar3">Fade to 0.3</button>
+		</div>
+	</body>
+</html>

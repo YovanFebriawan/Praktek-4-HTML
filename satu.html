@@ -1,0 +1,36 @@
+<!-- Mendefinisikan tipe dokumen berupa html -->
+<html>	
+	<head>
+		<!-- Memberikan judul pada tab browser -->
+		<title>Menggunakan jQuery</title>
+
+		<!-- Menambahkan jQuery -->
+		<script src="jquery-3.6.0.min.js"></script>
+
+		<!-- Menanamkan script sisi klien (JavaScript) -->
+		<script type="text/javascript">
+			// Membuat fungsi tersedia setelah dokumen dimuat
+			$(document).ready(function(){
+				// Membuat fungsi untuk dijalankan saat peristiwa klik terjadi
+				$(".sembunyi").click(function(){
+					// Menyembunyikan elemen yang dipilih
+					$("#foto").hide("slow");
+				});
+				// Membuat fungsi untuk dijalankan saat peristiwa klik terjadi
+				$(".tampil").click(function(){
+					// menampilkan elemen yang dipilih
+					$("#foto").show("slow");
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<!-- Membuat tombol yang dapat ditekan -->
+		<button class="sembunyi">sembunyikan</button>
+		<!-- Membuat tombol yang dapat ditekan -->
+		<button class="tampil">tampilkan</button>
+		<!-- Memasukkan gambar atau foto -->
+		<p><img id="foto" src="upn.jpg"></p>
+	</body>
+</html>

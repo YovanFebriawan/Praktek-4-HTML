@@ -1,0 +1,49 @@
+<!-- Mendefinisikan tipe dokumen berupa html -->
+<html>
+	<head>
+		<!-- Memberikan judul pada tab browser -->
+		<title></title>
+		<!-- Menambahkan jQuery -->
+		<script src="jquery-3.6.0.min.js"></script>
+		<!-- Menanamkan script sisi klien (JavaScript) -->
+		<script type="text/javascript">
+			// Membuat fungsi tersedia setelah dokumen dimuat
+			$(document).ready(function(){
+				// Melakukan fungsi ketika ditekan 2 kali
+				$(".kotak").dblclick(function(){
+					// Mengatur properti css untuk elemen yang dipilih
+					$(this).css({background:"red"});
+				});
+			});
+		</script>
+		<!-- Menambahkan css -->
+		<style type="text/css">
+			.kotak{
+				/* Menetapkan warna background */
+				background: yellow;
+				/* Menetapkan lebar elemen */
+				width: 50px;
+				/* Menetapkan tinggi elemen */
+				height: 50px;
+				/* Menetapkan ruang di sekitar elemen */
+				margin: 5px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- Membuat paragraf -->
+		<p><b>klik </b>2x pada setiap kotak untuk merubah warnanya</p>
+		<!-- Mendefiniskan sebuah tabel di html -->
+		<table>
+			<!-- Mendefinisikan sebuah baris dalam tabel html -->
+			<tr>
+				<!-- Mendefinisikan sel header dalam tabel html -->
+				<th><div class="kotak"></div></th>
+				<th><div class="kotak"></div></th>
+				<th><div class="kotak"></div></th>
+				<th><div class="kotak"></div></th>
+			</tr>
+		</table>
+	</body>
+</html>

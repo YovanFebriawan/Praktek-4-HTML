@@ -1,0 +1,49 @@
+<!-- Mendefinisikan tipe dokumen berupa html -->
+<html>
+	<head>
+		<!-- Memberikan judul pada tab browser -->
+		<title>Selector Nama Tag</title>
+		
+		<!-- Menambahkan jQuery -->
+		<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+		
+		<!-- Menanamkan script sisi klien (JavaScript) -->
+		<script type="text/javascript">
+			// Membuat fungsi tersedia setelah dokumen dimuat
+			$(document).ready(function(){
+				// Menambahkan nama kelas ke elemen yang dipilih
+				$("div").addClass("biru");
+			});
+		</script>
+
+		<!-- Menambahkan css -->
+		<style type="text/css">
+			/* Membuat nama kelas */
+			.biru{
+				/* Merubah warna teks menjadi biru */
+				color: blue;
+				/* Merubah ketebalan teks menjadi bold */
+				font-weight: bold;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- Mengelompokkan elemen html -->
+		<div>
+			<!-- Membuat paragraf -->
+			<p>Paragraf pertama</p>
+		</div>
+
+		<!-- Mengelompokkan elemen html -->
+		<div>
+			<!-- Membuat daftar item -->
+			<ul>
+				<!-- Mendefinisikan setiap item daftar -->
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</body>
+</html>

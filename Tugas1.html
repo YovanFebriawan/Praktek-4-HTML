@@ -1,0 +1,49 @@
+<!-- Mendefinisikan tipe dokumen berupa html -->
+<html>
+	<head>
+		<!-- Memberikan judul pada tab browser -->
+		<title>Menggunakan jQuery</title>
+		<!-- Menambahkan jQuery -->
+		<script src="jquery-3.6.0.min.js"></script>
+		<!-- Menanamkan script sisi klien (JavaScript) -->
+		<script type="text/javascript">
+			// Membuat fungsi tersedia setelah dokumen dimuat
+			$(document).ready(function(){
+				// Membuat fungsi untuk dijalankan saat peristiwa klik terjadi
+				$(".hilang1").click(function(){
+					// Membuat fungsi untuk menyembunyikan elemen yang dipilih
+					$("#gambar1").hide("slow");
+				});
+				// Membuat fungsi untuk dijalankan saat peristiwa klik terjadi
+				$(".muncul1").click(function(){
+					// Membuat fungsi untuk menampilkan elemen yang dipilih
+					$("#gambar1").show("slow");
+				});
+				// Membuat fungsi untuk dijalankan saat peristiwa klik terjadi
+				$(".hilang2").click(function(){
+					// Membuat fungsi untuk menyembunyikan elemen yang dipilih
+					$("#gambar2").hide("slow");
+				});
+				// Membuat fungsi untuk dijalankan saat peristiwa klik terjadi
+				$(".muncul2").click(function(){
+					// Membuat fungsi untuk menampilkan elemen yang dipilih
+					$("#gambar2").show("slow");
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<!-- Membuat tombol yang dapat ditekan -->
+		<button class="hilang1">Sembunyikan</button>
+		<button class="muncul1">Tampilkan</button>
+		<!-- Membuat baris baru -->
+		<br><br>
+		<!-- Membuat tombol yang dapat ditekan -->
+		<button class="hilang2">Sembunyikan</button>
+		<button class="muncul2">Tampilkan</button>
+		<!-- Memasukkan gambar atau foto -->
+		<p><img id="gambar1" src="awan.jpg"></p>
+		<p><img id="gambar2" src="hutan.jpg"></p>
+	</body>
+</html>

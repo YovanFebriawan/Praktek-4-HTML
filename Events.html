@@ -1,0 +1,26 @@
+<!-- Mendefinisikan tipe dokumen berupa html -->
+<html>
+<head>
+	<!-- Memberikan judul pada tab browser -->
+	<title>Memahami Events</title>
+	<!-- Menambahkan jQuery -->
+	<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+	<!-- Menanamkan script sisi klien (JavaScript) -->
+	<script type="text/javascript">
+		// Membuat fungsi tersedia setelah dokumen dimuat
+		$(document).ready(function(){
+			// Membuat fungsi untuk dijalankan saat peristiwa klik terjadi
+			$("a").click(function(){
+				// Menampilkan kotak dialog peringatan
+				alert("selamat datang di website facebook");
+			});
+		});
+	</script>
+</head>
+<body>
+	<!-- Menuju ke tautan ketika ditekan -->
+	<a href="http://facebook.com">
+		klik disini untuk membuka website facebook
+	</a>
+</body>
+</html>

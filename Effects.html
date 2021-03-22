@@ -1,0 +1,42 @@
+<!-- Mendefinisikan tipe dokumen berupa html -->
+<html>
+<head>
+	<!-- Memberikan judul pada tab browser -->
+	<title>Memahami Effects</title>
+	<!-- Menambahkan jQuery -->
+	<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+	<!-- Menanamkan script sisi klien (JavaScript) -->
+	<script type="text/javascript">
+		// Membuat fungsi tersedia setelah dokumen dimuat
+		$(document).ready(function(){
+			// Memanggil fungsi setelah waktu yang ditentukan (milidetik)
+			setTimeout(function(){
+				// Secara bertahap mengubah opasitas elemen dari yang terlihat menjadi tersembunyi
+				$("#kotak").fadeOut("slow",function(){
+					// Menghapus elemen yang dipilih
+					$("#kotak").remove();
+				});
+			}, 3000);
+		});
+	</script>
+	<!-- Menambahkan css -->
+	<style type="text/css">
+		#kotak{
+			/* Menetapkan lebar elemen */
+			width: 300px;
+			/* Menetapkan tinggi elemen */
+			height: 50px;
+			/* Menetapkan warna background */
+			background: lightyellow;
+			/* Menetapkan ukuran dan tipe border */
+			border: 1px solid black;
+			/* Menetapkan ruang di sekitar elemen */
+			padding: 5px;
+		}
+	</style>
+</head>
+<body>
+	<!-- Mendefinisikan judul di jendela browser -->
+	<h3 id="kotak">Perhatikan baik - baik teks ini, karena teks akan hilang dalam hitungan 3 detik</h3>
+</body>
+</html>
